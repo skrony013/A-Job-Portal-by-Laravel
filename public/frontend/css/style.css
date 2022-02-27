@@ -1,0 +1,3435 @@
+/*----------------------------------------------------------------------------------------------
+							Framework by Md. Rony Shaikh
+							Front End Developer, Bit Spirits
+----------------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------
+                Required Google Fonts for this Project
+------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;400;600;700;800;900&family=Roboto:wght@400;500;700;900&family=Titillium+Web:wght@300;400;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Alfa+Slab+One&family=Fredoka+One&display=swap');
+
+/* web fonts sample here */
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Fredoka One', cursive;
+
+ */
+
+/*-----------------------------------------------------------------
+                Starter CSS Here
+------------------------------------------------------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+ margin: 0;
+ padding: 0;
+ font-family: 'Quicksand', sans-serif;
+}
+
+a,ol,ul,input,button,p{
+ margin: 0;
+ padding: 0;
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* body{
+  background-color:#fff;
+  background-repeat: no-repeat;
+  color: #000;
+  width: 100%;
+  height: auto;
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+/*-----------------------------------------------------------------
+                Index Page CSS Start From Here
+------------------------------------------------------------------*/
+
+/* Header Section CSS Start From Here */
+
+.header-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	transition: 0.7s ease-in-out;
+	background: transparent;
+	background: #fff;
+}
+
+.h-sticky.sticky{
+	transition: 0.7s ease-in-out;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
+	background: #fff;
+}
+
+.header-section .logo img{
+	max-height: 60px;
+}
+
+.header-section .main-nav{
+	background-color: #EFEFEF;
+	border-radius: 10px;
+	/* padding: 0 50px; */
+}
+.header-section .main-nav li{
+	font-weight: 500;
+	transition: 0.3s ease-in-out;
+}
+.header-section .main-nav li:hover{
+	background-color: #0cf;
+	border-radius: 7px;
+	transition: 0.3s ease-in-out;
+}
+.header-section .main-nav li:hover a{
+	color: #fff !important;
+}
+.header-section .nav-end a{
+	background: #0cf;
+	color: #fff;
+	font-weight: 500;
+	transition: 0.3s ease-in-out;
+}
+.header-section .nav-end a:hover{
+	background: none;
+	font-weight: 500;
+	color: #000;
+	transition: 0.3s ease-in-out;
+	border: 1px solid #000;
+}
+.header-section .nav-end a:focus{
+	box-shadow: none !important;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 120px;
+    left: 120px;
+    z-index: 1030;
+}
+/* Header Section CSS Ended Here */
+
+/* Banner Section CSS Start From Here */
+.banner-section {
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   margin-top: 70px;
+   padding-top: 42px;
+   padding-bottom: 70px;
+   height: 55vh;
+}
+.banner-section .main-banner .title h1{
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 57px;
+	font-weight: 800;
+	line-height: 70px;
+	text-transform: uppercase;
+}
+.banner-section .main-banner{
+	margin-top: 10vh !important;
+}
+.banner-section .main-banner .title p{
+	color: #fff;
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+.banner-section .scroll-controller i{
+	font-size: 48px;
+	color: #999;
+}
+.banner-section .search-box input[type=text] {
+    width: 50%;
+}
+.banner-section .search-box input {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 15px;
+}
+.banner-section .search-box button {
+    margin-left: -33px;
+    background: transparent;
+    border: none;
+    color: #3f3f3f;
+    transition: 0.3s ease-in-out;
+}
+
+.mouse-scroll-anim {
+	animation: mouseScroll 1s infinite linear alternate;
+}
+@keyframes mouseScroll {
+	0% {
+		transform: translateY(-10px);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+/* Banner Section CSS Ended Here */
+
+
+
+/* All Service Section CSS Start From Here */
+.all-service-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+/* 	padding: 30px 0; */
+	margin-bottom: 75px;
+	margin-top: 10px;
+}
+.all-service-section a{
+	text-decoration: none;
+}
+.all-service-section .col-6:hover{
+	transform: translateY(-6px);
+	transition: 0.3s ease-in-out;
+}
+.all-service-section p{
+	font-size: 13px;
+	font-weight: 500;
+	color: #333;
+}
+
+.all-service-section a img{
+	/* height: 60px; */
+	width: 55px;
+}
+.all-service-section .service-area{
+	/* box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%); */
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+	padding: 0 10px;
+	/* background-color: #efefef; */
+
+}
+.navbar-light .navbar-toggler{
+	border: none;
+	font-size: 32px;
+}
+
+.navbar-light .navbar-toggler:focus{
+	border: none !important;
+	box-shadow: none !important;
+}
+.all-service-section .service-position{
+	position: relative;
+	top: 80px;
+}
+/* All Service Section CSS Ended Here */
+
+
+/* Trending Service Section CSS Start From Here */
+.trending-service-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+	padding: 35px 0;
+}
+.trending-service-section .subheading {
+	font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.trending-service-section .subheading:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 40px;
+    height: 2px;
+    background: #0cf;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+}
+.trending-service-section .section-heading h3{
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+	color: #333;
+	font-size: 27px;
+	letter-spacing: -1.3px;
+	text-transform: capitalize;
+}
+.trending-service-section .service-btn{
+	text-align: right;
+}
+.required-ulr{
+	margin-top: 10px;
+}
+.required-ulr a{
+	text-decoration: none;
+	color: #999;
+}
+
+.trending-service-section .btn-main {
+    background: #3f3f3f;
+    color: #fff;
+    border-color: #0cf;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size:13px;
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid transparent;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+}
+.trending-service-section .btn-main:focus {
+    box-shadow: none;
+}
+.trending-service-section .btn-main:hover{
+   background: transparent;
+   color: #333;
+   border: 1px solid #333;
+}
+.trending-service-section .trending-service-block {
+    border: 1px solid #e2f4ff;
+    background: #fff;
+    transition: .4s;
+    margin-bottom: 25px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.trending-service-section .trending-service-block.trending-style:hover {
+	cursor: pointer;
+	box-shadow: 0 14px 59px rgb(0 0 0 / 12%);
+	background: #fff;
+}
+.trending-service-section .trending-service-block.trending-style:hover .trending-img img{
+	transform: scale(1.06);
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.5s ease-in-out;
+}
+.trending-service-section .trending-service-block.trending-style{
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.5s ease-in-out;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+.trending-service-section .trending-img {
+    position: relative;
+    margin-bottom: 10px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: 0.5s ease-in-out;
+}
+.trending-service-section .trending-img img {
+    border-radius: 5px;
+    border-radius: 0px;
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.trending-service-section .trending-style .trending-img .trending-cat {
+    position: absolute;
+    content: "";
+    left: 20px;
+    bottom: -15px;
+    background:#0cf;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+}
+.trending-service-section .trending-service-block .trending-content {
+    padding: 20px;
+}
+.trending-service-section .trending-service-block .trending-footer {
+    border-top: 1px solid #e2f4ff;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+.trending-service-section .trending-meta {
+    margin: 5px 0px;
+}
+.trending-service-section .trending-meta span {
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 12px;
+    color: #222;
+    font-weight: 600;
+}
+.trending-service-section .trending-meta span i {
+    margin-right: 7px;
+    color: #3f3f3f;
+}
+.trending-service-section .trending-style .rating, .trending-style .trending-price {
+    margin-bottom: 0px;
+}
+.trending-service-section .trending-price {
+    color: #FF1949;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+.trending-service-section .trending-price .del {
+    text-decoration: line-through;
+    color: #727695;
+    font-weight: 400;
+    font-size: 14px;
+}
+.trending-service-section .img-container{
+	height: 130px;
+    background-size: cover;
+    background-color: #ddd;
+    background-position: center center;
+    position: relative;
+    display: block;
+}
+.trending-service-section .trending-content h4 a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+	line-height: 0;
+}
+.trending-service-section .trending-content .height-control {
+    min-height: 110px;
+}
+.trending-service-section .trending-content h4{
+	line-height: 0.9;
+	text-align: left;
+}
+.trending-service-section .view-btn a{
+	padding: 2px 8px;
+	border: 1px solid #333;
+	color: #fff;
+	font-weight: 500;
+	font-size: 10px;
+	border-radius: 25px 0 25px 25px;
+	background-color: #333;
+	transition: 0.3s ease-in-all;
+}
+.trending-service-section .view-btn a:focus{
+	box-shadow: none;
+}
+.trending-service-section .view-btn a:hover{
+	background: transparent;
+	border: 1px solid #333;
+	color: #333 !important;
+	transition: 0.3s ease-in-all;
+}
+.trending-service-section .view-btn a i{
+	font-size: 12px;
+}
+/* Trending Service Section CSS Ended Here */
+
+/* Recommended Products Section CSS Start From Here */
+.recommended-product-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+	padding: 30px 0;
+}
+.recommended-product-section .subheading {
+	font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.recommended-product-section .subheading:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 40px;
+    height: 2px;
+    background: #0cf;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+}
+.recommended-product-section .section-heading h3{
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+	color: #333;
+	font-size: 36px;
+	letter-spacing: -1.3px;
+	text-transform: capitalize;
+}
+.recommended-product-section .service-btn{
+	text-align: right;
+}
+
+.recommended-product-section .btn-main {
+    background: #0cf;
+    color: #fff;
+    border-color: #0cf;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size:13px;
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid transparent;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+}
+.recommended-product-section .btn-main:hover{
+   background: transparent;
+   color: #333;
+   border: 1px solid #333;
+}
+.recommended-product-section .trending-service-block {
+    border: 1px solid #e2f4ff;
+    background: #fff;
+    transition: .4s;
+    margin-bottom: 25px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.recommended-product-section .trending-service-block.trending-style:hover {
+	cursor: pointer;
+	box-shadow: 0 14px 59px rgb(0 0 0 / 12%);
+	background: #fff;
+}
+.recommended-product-section .trending-service-block.trending-style:hover .trending-img img{
+	transform: scale(1.06);
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.5s ease-in-out;
+}
+.recommended-product-section .trending-service-block.trending-style{
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.5s ease-in-out;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+.recommended-product-section .trending-img {
+    position: relative;
+    margin-bottom: 10px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: 0.5s ease-in-out;
+}
+.recommended-product-section .trending-img img {
+    border-radius: 5px;
+    border-radius: 0px;
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.recommended-product-section .trending-style .trending-img .trending-cat {
+    position: absolute;
+    content: "";
+    left: 185px;
+    bottom: -25px;
+    background:#FF284F;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+}
+.recommended-product-section .trending-service-block .trending-content {
+    padding: 20px;
+}
+.recommended-product-section .trending-service-block .trending-footer {
+    border-top: 1px solid #e2f4ff;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+.recommended-product-section .trending-meta {
+    margin: 5px 0px;
+}
+.recommended-product-section .trending-meta span {
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 12px;
+    color: #222;
+    font-weight: 600;
+}
+.recommended-product-section .trending-meta span i {
+    margin-right: 7px;
+    color: #0cf;
+}
+.recommended-product-section .trending-style .rating, .trending-style .trending-price {
+    margin-bottom: 0px;
+}
+.recommended-product-section .trending-price {
+    color: #FF1949;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+.recommended-product-section .trending-price .del {
+    text-decoration: line-through;
+    color: #727695;
+    font-weight: 400;
+    font-size: 14px;
+}
+.recommended-product-section .img-container{
+	height: 200px;
+    background-size: cover;
+    background-color: #ddd;
+    background-position: center center;
+    position: relative;
+    display: block;
+}
+.recommended-product-section .trending-content h4 a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+	line-height: 0;
+}
+.recommended-product-section .trending-content h4{
+	line-height: 0.9;
+	text-align: center;
+}
+.recommended-product-section .view-btn a{
+	padding: 5px 14px;
+	border: 1px solid #333;
+	color: #fff;
+	font-weight: 500;
+	font-size: 10px;
+	border-radius: 50px;
+	background-color: #333;
+	transition: 0.3s ease-in-all;
+}
+.recommended-product-section .view-btn a:focus{
+	box-shadow: none;
+}
+.recommended-product-section .view-btn a:hover{
+	background: transparent;
+	border: 1px solid #333;
+	color: #333;
+	transition: 0.3s ease-in-all;
+}
+.recommended-product-section .view-btn a i{
+	font-size: 12px;
+}
+/* Trending Service Section CSS Ended Here */
+
+
+
+/* About Section CSS Start From Here */
+
+.about-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.about-section .subheading {
+	font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+}
+.about-section .subheading:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 40px;
+    height: 2px;
+    background: #0cf;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+}
+.about-section .section-heading h3{
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+	color: #333;
+	font-size: 36px;
+	letter-spacing: -1.3px;
+	text-transform: capitalize;
+}
+.about-section .about-intro p{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-align: justify;
+}
+.about-section .about-intro p span{
+	font-weight: 600;
+}
+/* About Section CSS Ended Here */
+
+
+
+/*  Why Choose Us Section CSS Start From Here */
+
+.why-schoose-us-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+	padding: 30px 0;
+}
+.why-schoose-us-section .subheading {
+	font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+}
+.why-schoose-us-section .subheading:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 40px;
+    height: 2px;
+    background: #0cf;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+}
+.why-schoose-us-section .section-heading h3{
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+	color: #333;
+	font-size: 34px;
+	letter-spacing: -1.3px;
+	text-transform: capitalize;
+}
+.why-schoose-us-section .choose-360-content p{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-align: justify;
+}
+.why-schoose-us-section .choose-360-content p span{
+	color:#0cf;
+	font-weight: 600;
+}
+.why-schoose-us-section .bottom-info h3{
+	font-weight: 700;
+}
+.why-schoose-us-section .bottom-info ul{
+	padding-left: 15px;
+}
+.why-schoose-us-section .bottom-info li {
+	font-family: 'Raleway', sans-serif;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+.why-schoose-us-section .bottom-info li i{
+	background: #0cf  none repeat scroll 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    float: left;
+    font-size: 10px;
+    height: 15px;
+    line-height: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+    width: 15px;
+    z-index: 1;
+}
+.why-schoose-us-section .bottom-info li i::after {
+    background: #0cf none repeat scroll 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+    height: 23px;
+    left: 0;
+    margin-left: -4px;
+    margin-top: -4px;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 23px;
+    z-index: -1;
+}
+.why-schoose-us-section .second-choose{
+/* 	background-color: #0cf;
+	border: 1px solid #0cf; */
+	margin-left: 3px;
+	box-shadow: 0 0 10px #ccc;
+}
+
+.why-schoose-us-section .choose-us-content .card-offer{
+  padding: 25px 15px;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  /* height: 240px; */
+}
+.why-schoose-us-section .choose-us-content .card-offer:hover{
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.why-schoose-us-section .choose-us-content .card-offer-title{
+	font-size: 16px;
+	font-weight: 700;
+	color: #000 !important;
+	line-height: 1.25;
+	text-transform: capitalize;
+	margin: 10px 0;
+}
+
+.why-schoose-us-section .choose-us-content .offer-c-1{
+	margin-top: -40px;
+}
+.why-schoose-us-section .choose-us-content p{
+	font-weight: 400;
+	font-size: 14px;
+}
+/*  Why Choose Us Section CSS Ended Here */
+
+
+
+/* Counter Section CSS Start From Here */
+.counter-section{
+  width: 100%;
+  padding: 55px 0;
+  background-color: #EFEFEF;
+  background-color: #FF1949;
+  background-image: url('../img/banner-bg-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .counter-section h2{
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  font-size:22px;
+  font-weight: 700;
+  text-align: center;
+}
+.counter-section i{
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+	color: #FF1949;
+	font-size: 20px;
+	height: 50px;
+	left: 0;
+	line-height: 50px;
+	margin: auto;
+	position: relative;
+	right: 0;
+	top: -30px;
+	width: 50px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	background-color: #fff;
+	margin-top: 5px;
+}
+ .counter-section .outline{
+  border: 1px dashed #fff;
+ }
+/* Counter Section CSS Ended Here */
+
+/* Features Section CSS Start From Here */
+.features-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+	padding: 50px 0;
+}
+.features-section .subheading {
+	font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+}
+.features-section .subheading:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 40px;
+    height: 2px;
+    background: #0cf;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+}
+.features-section .section-heading h3{
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+	color: #333;
+	font-size: 34px;
+	letter-spacing: -1.3px;
+	text-transform: capitalize;
+}
+.features-section .feature-panel{
+	text-align: center;
+}
+.features-section .feature-panel .card{
+	min-height: 197px;
+	padding: 12px 8px;
+	transition: 0.3s ease-in-out;
+}
+.features-section .feature-panel .card:hover{
+	cursor: pointer;
+	transform: translateY(-6px);
+	transition: 0.3s ease-in-out;
+}
+.features-section h5{
+	font-weight: 700;
+	color: #333;
+	margin: 7px 0;
+	font-size: 18px;
+}
+.features-section p{
+	font-weight: 400;
+	color: #333;
+	font-size: 12px;
+}
+/* Features Section CSS Ended Here */
+
+
+/* Testimonial Section CSS Start From Here */
+.testimonial-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+	padding: 50px 0;
+}
+.testimonial-section .subheading {
+	font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+}
+.testimonial-section .subheading:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 40px;
+    height: 2px;
+    background: #0cf;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+}
+.testimonial-section .section-heading h3{
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+	color: #333;
+	font-size: 34px;
+	letter-spacing: -1.3px;
+	text-transform: capitalize;
+}
+/* .testimonial-section{
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:#FFF;
+  padding-top: 60px;
+  padding-bottom: 80px;
+} */
+
+.testimonial-section .section-title{
+  margin-bottom: 45px;
+ }
+  .testimonial-section .section-title h2 {
+  	font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding-bottom: 25px;
+    position: relative;
+    text-transform: uppercase;
+  }
+   .testimonial-section .section-title h2::before {
+    background: #2ec4b6;
+  }
+
+   .testimonial-section .section-title h2::before {
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+   .testimonial-section .section-title h2::after {
+    background: #ddd;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 130px;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+.testimonial-section .testimonial-slides .testimonial-slide-item .title-img img{
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+}
+
+.testimonial-section .testimonial-slides .testimonial-slide-item .intro p{
+	font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 15px;
+}
+.testimonial-section .testimonial-slides .testimonial-slide-item .client-details .profile{
+	margin-left: 15px;
+}
+.testimonial-section .testimonial-slides .testimonial-slide-item .client-details .profile h5{
+	font-weight: 700;
+	font-size: 20px;
+}
+.testimonial-section .testimonial-slides .testimonial-slide-item .client-details .profile h6{
+	font-weight: 600;
+	font-size: 14px;
+}
+.testimonial-section .testimonial-slides .testimonial-slide-item .item-slide{
+	/* box-sizing: content-box; */
+    padding: 30px 30px 0 30px;
+    margin: 30px 15px;
+    text-align: center;
+    min-height: 300px;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+    border-left: 7px solid #0cf;
+}
+
+.testimonial-section .item-slide .v-1-img{
+position: relative;
+}
+.testimonial-section .item-slide .transparent-layer{
+  height: 250px;
+  width:96%;
+  background: #cc9900;
+  /* background: #2EC4B6; */
+  position: absolute;
+  opacity: 50%;
+  top: 0;
+  border-radius: 10px;
+}
+
+.testimonial-section .item-slide .play-icon {
+	background: transparent;
+	font-size: 16px;
+	color: #fff;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height:50px;
+	list-style-type: none;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	right: 42.5%;
+	z-index: 999;
+	top: 112px;
+}
+  .testimonial-section .item-slide .play-icon:hover{
+    cursor: pointer;
+  }
+
+  @keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    
+  }
+  50% {
+    opacity: 0.9;
+    
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+   
+  }
+}
+
+
+
+.waves {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	opacity: 0;
+	border-radius: 100%;
+	right: -50px;
+	bottom: -50px;
+	z-index: -1;
+	-webkit-animation: waves 3s ease-in-out infinite;
+	animation: waves 3s ease-in-out infinite;
+	background: rgba(25,206,103,0.9);
+	z-index: 2;
+	top: 90px;
+	left: 44%;
+}
+        
+.wave-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.wave-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+
+/*----------------------------------------
+          Testimonial Slider Control
+ -----------------------------------------*/
+.owl-theme .owl-nav{
+  display: none;
+}
+
+.owl-theme .owl-dots{
+	display: flex;
+	position: absolute;
+	top: 340px;
+	left: 47%;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #444;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+.owl-theme .owl-dots .owl-dot:focus {
+ border: none !important;
+ outline: none;
+}
+
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #0cf;
+     width: 17px;
+    height: 10px;
+    transition: 0.3s ease-in-out;
+}
+/* Testimonial Section CSS Ended Here */
+
+
+/* Brand Section CSS Start From Here */
+.brand-img-section{
+	width: 100%;
+	padding: 70px 0;
+}
+.brand-img-section .brand-title h3{
+	font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding-bottom: 25px;
+    position: relative;
+    text-transform: capitalize;
+}
+.brand-img-section .brand-title h4{
+	font-family: 'Spectral', serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #333;
+	font-weight: 600;
+	letter-spacing: 2px;
+	display: inline-block;
+	position: relative;
+	display: inline-block;
+}
+.brand-img-section .brand-title h4::before{
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 3px;
+	background-color: #0cf;
+	bottom: 8px;
+	left: -48px;
+}
+.brand-img-section .brand-title h4::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color:#0cf ;
+    bottom: 8px;
+    right: -48px;
+}
+.brand-img-section img{
+	filter: grayscale(1);
+	opacity: 0.3;
+	margin: 0 auto;
+}
+.brand-img-section img:hover{
+	cursor: pointer;
+	filter:none;
+	opacity: 1;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto !important;
+    border-radius: 10px;
+}
+/* Brand Section CSS Ended Here */
+
+/*-----------------------------------------------------------------
+                Index Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+                University List Page CSS Start From Here
+------------------------------------------------------------------*/
+
+/* Hero Section CSS Start From Here */
+.hero-section{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 60px 0;
+	margin-top: 95px;
+}
+ .hero-section .admission-title h1{
+ 	font-size:42px;
+ 	font-weight: 700;
+ 	text-align: center;
+ 	color: #fff;
+ 	letter-spacing: 1px;
+ }
+ .hero-section .admission-form{
+ 	display: flex;
+ 	justify-content: center;
+    
+ }
+ .hero-section .admission-form ul li{
+ 	margin: 0 5px;	
+ 	/* width: 27%; */
+ }
+ .hero-section .admission-form ul li label select{
+ 	width: 100%;
+ 	height: 100%;
+ 	margin: 0;
+ 	padding: 0 0 0 1.5em;
+ 	color: #000;
+ 	cursor: pointer;
+ 	border: 1px solid #dfdfdf!important;
+ 	font-size: 16px;
+ 	padding: 12px 18px;
+ 	width: 100%;
+ 	border-radius: 3px;
+ 	appearance: none;
+ 	outline: 0;
+ 	box-shadow: none;
+ 	border: 0!important;
+ 	background: #fff;
+ }
+
+
+.hero-section .admission-form ul li input {
+    height: 53px;
+    border-radius: 3px;
+    width: 100%;
+    outline: 0;
+ 	box-shadow: none;
+ 	border: 0!important;
+ 	font-family: 'Spectral', serif;
+ 	font-weight: 600;
+ 	transition: 0.3s ease-in-out;
+}
+
+input[type="submit"] {
+    border: 0 solid;
+    background: #446fb1;
+    font-size: 14px;
+    padding: 11px 12px;
+    cursor: pointer;
+}
+/* Hero Section CSS Ended Here */
+
+
+/* Versity List Section CSS Start From Here */
+.versity-list-section{
+ 	width: 100%;
+ 	/* margin-bottom: 100px; */
+
+ }
+ .versity-list-section .content-entry .inner-block{
+ 	display: block;
+ 	border: 1px solid #ddd;
+ 	margin-bottom: 15px;
+ 	height: 195px;
+ }
+ .versity-list-section .content-entry .inner-block.articlelogo {
+    line-height: 100px !important;
+}
+.articlelogo {
+    height: 195px;
+    width: 30%;
+    margin-bottom: 0;
+    float: left;
+    z-index: 8;
+    padding: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #ddd!important;
+    display: block;
+    border: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+ 
+ .versity-list-section .content-entry .overtitle a{
+ 	text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700 !important;
+    color: #000;
+    font-size: 17px;
+ }
+
+ .versity-list-section h6{
+ 	font-family: 'Quicksand', sans-serif;
+ 	font-weight: 600;
+ 	font-size: 14px;
+ 	line-height: 20px;
+ }
+ .deadline{
+ 	color: tomato;
+ 	margin-bottom: 5px;
+ }
+ .vac-style{
+ 	font-family: 'Quicksand', sans-serif;
+ 
+ 	font-weight: 700;
+ 	font-size: 14px;
+ 	color: #0091ad;
+
+ }
+ 
+.articlelogo{
+	line-height: 160px !important;
+}
+
+.ranked{
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.heading-test .title span{
+font-size: 20px;
+background: #000;
+display: inline-block;
+padding: 2px 20px;
+text-transform: uppercase;
+padding-bottom: 0;
+color: #fff;
+}
+.heading-test .title span:before{
+position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+background: #000;
+z-index: -1;
+transform: rotate(45deg);
+
+} 
+.view-btn .job-btn{
+    padding: 3px 8px;
+    border: 1px solid #333;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 10px !important;
+    border-radius: 50px;
+    background-color: #333;
+    /* transition: 0.3s ease-in-all; */
+}
+.terms-section p{
+text-align: justify;
+}
+/* Versity List Section CSS Ended Here */
+
+/*-----------------------------------------------------------------
+                University List Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------
+                University Details Page CSS Start From Here
+------------------------------------------------------------------*/
+
+/* Hero Section CSS Start From Here */
+.hero-section{
+  margin-top: 95px;
+  width: 100%;
+  padding: 60px 0;
+  background-size: cover;
+  background-repeat: no-repeat;/* 
+  background-image:url('../img/v-img.png'); */
+
+ }
+ .hero-section .versity-logo{
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+
+}
+.hero-section .versity-logo-outer{
+  background: #fff;
+  border-radius: 10px;
+  padding: 0;
+  padding: 42px 0;
+
+
+}
+.hero-section .versity-title-bar .versity-title-finland{
+ font-size: 32px;
+ line-height: 36px;
+ margin: 1px 0;
+ padding-top: 10px;
+ color: #ffffff;
+ font-family: 'Lato', sans-serif;
+ font-weight: 700;
+}
+.hero-section .versity-title-bar span {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.hero-section .versity-title-bar .col-md-8 {
+   padding-left: 25px;
+}
+
+.hero-section .versity-title-bar ul li{
+   padding-bottom: 7px;
+}
+.hero-section .versity-title-bar ul li i{
+   padding-right: 5px;
+}
+
+.hero-section .university-list a {
+ text-decoration: none;
+ color: #fff;
+}
+
+.hero-section .versity-title-bar .apply-btn input{
+    text-decoration: none;
+    color: #0cf;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: transparent;
+    padding: 9px 16px;
+    border-radius: 30px 0 30px 30px;
+    transition: 0.4s ease-in-out;
+    font-size: 13px;
+     border: 1px solid #0cf;
+}
+.hero-section .versity-title-bar .apply-btn input:hover {
+    background-color: transparent;
+    color: #0cf;
+    transition: 0.4s ease-in-out;
+    border: 1px solid #0cf;
+}
+
+.hero-section .versity-title-bar .apply-btn {
+    list-style: none;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+.hero-section .versity-title-bar .apply-btn:hover {
+    transform: scale(1.07);
+}
+
+.hero-section .features{
+  width: 100%;
+  display: table;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+}
+.hero-section .features li{
+  float: left;
+}
+.hero-section .features .innerbox {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 20px;
+  border: 1px solid #fff;
+  padding: 10px;
+  height: 60px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.hero-section .features .innerbox i {
+    font-size: 30px;
+    float: left;
+    margin-right: 11px;
+    line-height: 38px;
+    
+}
+
+.hero-section .features .innerbox .overtitle {
+    float: left;
+}
+
+.hero-section .features li span {
+  display: block;
+  color: #fff;
+  margin: 0px;
+  height: 35px;
+  font-size: 17px;
+  text-transform: capitalize;
+  border-left: 1px solid #fff;
+  float: right;
+  padding-left: 10px;
+  line-height: 35px;
+  font-family: "Lato", sans-serif;
+}
+
+/* Modal Form CSS start*/
+
+ .hero-section .contact-form-area .contact-info {
+    margin-bottom: 30px;
+}
+ .hero-section .contact-form-area .contact-info h2 {
+    font-size: 30px;
+    margin: 0 0 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+ .hero-section .contact-form-area .form-group {
+    margin-bottom: 30px;
+}
+ .hero-section .contact-form-area .form-group input {
+    border: 1px solid #ebebeb;
+    height: 45px;
+    padding: 8px 15px;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.hero-section .contact-form-area .form-group.mb-18 {
+    margin-bottom: 18px;
+}
+.hero-section .contact-form-area .form-group textarea {
+    padding: 8px 15px;
+    border: 1px solid #ebebeb;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.hero-section .contact-form-area input.sbmt-btn {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #4BAE48;
+    border: medium none transparent;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.hero-section .contact-form-area input.sbmt-btn:hover {
+   background-color: transparent;
+   border: 1px solid #0cf;
+   color: #0cf;
+   transition: 0.3s ease-in-out;
+}
+.hero-section .contact-form-area input[type="submit"] {
+    background: #0cf none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 9px 19px;
+    text-transform: capitalize;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+}
+.hero-section .contact-form-area .modal-title{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+/* Modal form css end */
+/* Hero Section CSS Ended Here */
+
+
+/* Content Section CSS Start From Here */
+.content-section{
+  width: 100%;
+  padding: 50px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ .content-section .contentx h2 {
+    margin: 20px 0px 10px 0px;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    font-size: 22px;
+}
+ .content-section .contentx p {
+    color: #333333;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: justify;
+}
+ .content-section .contentx ul li {
+    line-height: 22px;
+    margin-bottom: 5px;
+    text-align: justify;
+    margin-left: 30px;
+}
+ .content-section .sidecontentx h2 {
+    margin: 20px 0px 10px 0px;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    font-size: 22px;
+}
+ .content-section .table {
+    border-collapse: collapse;
+}
+ .content-section .searchandfilter ul {
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+}
+
+ .content-section .inner-column.chhoooz .searchandfilter ul li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content-section .searchandfilter ul li {
+    list-style: none;
+    display: block;
+    padding: 0px 0;
+    margin: 0px 5px;
+    float: left;
+}
+.content-section .searchandfilter label {
+    width: 100%;
+}
+.searchandfilter label {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.searchandfilter select.sf-input-select {
+    min-width: 170px;
+}
+.content-section select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 1.5em;
+  color: #333;
+  cursor: pointer;
+  border: 1px solid #dfdfdf !important;
+  font-size: 16px;
+  padding: 15px 15px;
+  width: 100%;
+  /* margin-right: 10px; */
+  border-radius: 3px;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  background-color: #fff;
+  font-weight: 500;
+}
+.content-section .inner-column.chhoooz .searchandfilter ul li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content-section li.sf-field-submit input {
+  margin-top: 42px;
+  height: 53px;
+  border-radius: 3px;
+  width: 100%;
+}
+.content-section input[type="submit"] {
+	border: 0 solid;
+	font-size: 14px;
+	padding: 11px 12px;
+	cursor: pointer;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+  }
+/* Content Section CSS Ended Here */
+
+/*-----------------------------------------------------------------
+                University Details Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------
+                Service List Page CSS Start From Here
+------------------------------------------------------------------*/
+
+
+/* Sub Menu Banner CSS Start From Here */
+.sub-menu-banner-section{
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-color: #fff;
+ padding-bottom: 30px;
+ padding-top: 20px;
+ /* margin-top: 93px; */
+ padding-top: 110px;
+ position: relative;
+}
+.sub-menu-banner-section .overlay{
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ background-color: black;
+ opacity: 0.9;
+ top: 0;
+}
+.sub-menu-banner-section .test-separator::after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #0cf;
+}
+.sub-menu-banner-section ol{
+  background-color: transparent;
+}
+.sub-menu-banner-section .title h3{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #0cf ;
+  margin: 0;
+  /* padding-bottom: 25px; */
+  position: relative;
+  text-transform: uppercase;
+  font-size: 32px;
+  padding-top: 15px;
+}
+
+
+.sub-menu-banner-section .breadcrumb-item a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sub-menu-banner-section .breadcrumb .active{
+  text-decoration: none;
+  color: #0cf;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #FFF;
+    content: "/";
+}
+
+/* Sub Menu Banner CSS Ended Here */
+
+/* Service List CSS Start From Here */
+.service-list-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+	padding: 30px 0;
+	margin-top: 90px;
+}
+.service-list-section .subheading {
+	font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.service-list-section .subheading:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 40px;
+    height: 2px;
+    background: #0cf;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+}
+.service-list-section .section-heading h3{
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+	color: #333;
+	font-size: 36px;
+	letter-spacing: -1.3px;
+	text-transform: capitalize;
+}
+.service-list-section .service-btn{
+	text-align: right;
+}
+
+.service-list-section .btn-main {
+    background: #0cf;
+    color: #fff;
+    border-color: #0cf;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size:13px;
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid transparent;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+}
+.service-list-section .btn-main:hover{
+   background: transparent;
+   color: #333;
+   border: 1px solid #333;
+}
+.service-list-section .trending-service-block {
+    border: 1px solid #e2f4ff;
+    background: #fff;
+    transition: .4s;
+    margin-bottom: 25px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.service-list-section .trending-service-block.trending-style:hover {
+	cursor: pointer;
+	box-shadow: 0 14px 59px rgb(0 0 0 / 12%);
+	background: #fff;
+}
+.service-list-section .trending-service-block.trending-style:hover .trending-img img{
+	transform: scale(1.06);
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.5s ease-in-out;
+}
+.service-list-section .trending-service-block.trending-style{
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.5s ease-in-out;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+.service-list-section .trending-img {
+    position: relative;
+    margin-bottom: 10px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: 0.5s ease-in-out;
+}
+.service-list-section .trending-img img {
+    border-radius: 5px;
+    border-radius: 0px;
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.service-list-section .trending-style .trending-img .trending-cat {
+    position: absolute;
+    content: "";
+    left: 20px;
+    bottom: -15px;
+    background:#FF284F;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+}
+.service-list-section .trending-service-block .trending-content {
+    padding: 20px;
+}
+.service-list-section .trending-service-block .trending-footer {
+    border-top: 1px solid #e2f4ff;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+.service-list-section .trending-meta {
+    margin: 5px 0px;
+}
+.service-list-section .trending-meta span {
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 12px;
+    color: #222;
+    font-weight: 600;
+}
+.service-list-section .trending-meta span i {
+    margin-right: 7px;
+    color: #0cf;
+}
+.service-list-section .trending-style .rating, .trending-style .trending-price {
+    margin-bottom: 0px;
+}
+.service-list-section .trending-price {
+    color: #FF1949;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+.service-list-section .trending-price .del {
+    text-decoration: line-through;
+    color: #727695;
+    font-weight: 400;
+    font-size: 14px;
+}
+.service-list-section .img-container{
+	height: 200px;
+    background-size: cover;
+    background-color: #ddd;
+    background-position: center center;
+    position: relative;
+    display: block;
+}
+.service-list-section .trending-content h4 a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+	line-height: 0;
+}
+.service-list-section .trending-content h4{
+	line-height: 0.9;
+	text-align: center;
+}
+.service-list-section .view-btn a{
+	padding: 3px 8px;
+	border: 1px solid #333;
+	color: #fff;
+	font-weight: 500;
+	font-size: 10px;
+	border-radius: 50px;
+	background-color: #333;
+	transition: 0.3s ease-in-all;
+}
+.service-list-section .view-btn a:focus{
+	box-shadow: none;
+}
+.service-list-section .view-btn a:hover{
+	background: transparent;
+	border: 1px solid #333;
+	color: #333;
+	transition: 0.3s ease-in-all;
+}
+.service-list-section .view-btn a i{
+	font-size: 12px;
+}
+/* Service List CSS Ended Here */
+
+/* Pagination */
+
+.versity-list-section  .pagination-box li {
+    display: inline-block;
+}
+.versity-list-section .pagination-box li a {
+    /* border: 1px solid #ebebeb;
+    border-radius: 30px; */
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    margin: 0 3px;
+    display: inline-block;
+    color: #333;
+    position: relative;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+}
+.versity-list-section .pagination li:first-child a, .pagination li:first-child span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination-box > .active > a, .pagination-box > .active > a:focus, .pagination-box > .active > a:hover, .pagination-box > .active > span, .pagination-box > .active > span:focus, .pagination-box > .active > span:hover {
+    background-color: #0cf;
+    border-color: #0cf;
+}
+.pagination-box .active a {
+    color: #fff !important;
+}
+.pagination li:last-child a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pagination-box li a:hover {
+    background-color: #0cf;
+    border-color: #0cf;
+}
+.pagination-box li a:hover {
+    color: #fff;
+}
+
+/*-----------------------------------------------------------------
+               Service  List Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+               Service  Details Page CSS Start From Here
+------------------------------------------------------------------*/
+
+/* Sub Menu Banner Section CSS Start From Here */
+.sub-menu-banner-section-1{
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 93px;
+  background-image: url('../img/new-banner-bg.png');
+}
+
+.sub-menu-banner-section-1 .content li{
+  margin-bottom: 10px;
+}
+.sub-menu-banner-section-1 .content li i{
+  margin-right: 7px;
+  color: #fff !important;
+}
+.sub-menu-banner-section-1 .content li span{
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+}
+.sub-menu-banner-section-1 ol{
+  background-color: transparent;
+}
+.sub-menu-banner-section-1 .title h3{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: #FFF;
+  margin: 0;
+  /* padding-bottom: 25px; */
+  position: relative;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-top: 15px;
+}
+.sub-menu-banner-section-1 .breadcrumb-item a{
+  text-decoration: none;
+  color: #0cf;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sub-menu-banner-section-1 .breadcrumb .active{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sub-menu-banner-section-1 .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #FFF;
+    content: "/";
+}
+.sub-menu-banner-section-1 input.sbmt-btn {
+	text-decoration: none;
+	color: #0cf;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background-color: transparent;
+	padding: 9px 16px;
+	border-radius: 30px 0 30px 30px;
+	transition: 0.4s ease-in-out;
+	font-size: 13px;
+	border: 1px solid #0cf;
+}
+.sub-menu-banner-section-1 .modal-btn input.sbmt-btn:hover {
+	transform: scale(1.07);
+}
+.sub-menu-banner-section-1 .btn-pos{
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-end;
+  align-items: center;
+}
+/* Modal Form CSS start*/
+
+ .sub-menu-banner-section-1 .contact-form-area .contact-info {
+    margin-bottom: 30px;
+}
+ .sub-menu-banner-section-1 .contact-form-area .contact-info h2 {
+    font-size: 30px;
+    margin: 0 0 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+ .sub-menu-banner-section-1 .contact-form-area .form-group {
+    margin-bottom: 30px;
+    padding: 0 !important;
+    border: none;
+}
+ .sub-menu-banner-section-1 .contact-form-area .form-group input {
+    border: 1px solid #ebebeb;
+    height: 45px;
+    padding: 8px 15px;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.sub-menu-banner-section-1 .contact-form-area .form-group.mb-18 {
+    margin-bottom: 18px;
+}
+.sub-menu-banner-section-1 .contact-form-area .form-group textarea {
+    padding: 8px 15px;
+    border: 1px solid #ebebeb;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.sub-menu-banner-section-1 .contact-form-area input.sbmt-btn {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0cf;
+    border: medium none transparent;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.sub-menu-banner-section-1 .contact-form-area input.sbmt-btn:hover {
+   background-color: transparent;
+   border: 1px solid #0cf;
+   color: #0cf;
+   transition: 0.3s ease-in-out;
+}
+.sub-menu-banner-section-1 .contact-form-area input[type="submit"] {
+    background: #0cf none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 9px 19px;
+    text-transform: capitalize;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+}
+.sub-menu-banner-section-1 .contact-form-area .modal-title{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+/* Modal form css end */
+
+/* Sub Menu Banner Section CSS Ended Here */
+
+/* Single Service Section CSS Ended Here */
+.single-service-section{
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F1F1F1;
+  background-color: #fff;
+  padding: 60px 0;
+}
+.single-service-section .single-service-area{
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+	border-radius: 5px;
+}
+.single-service-section .widget.recent_posts {
+    background-color: #fff;
+    /* border: 1px solid #eee; */
+    margin: 0 0 30px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.single-service-section .widget-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    color: #fff;
+    background: #333;
+    border-radius: 5px 5px 0 0;
+}
+.single-service-section .widget ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 20px 20px 20px 45px;
+}
+.single-service-section .widget.recent_posts li {
+    padding-bottom: 15px;
+}
+
+.single-service-section .widget ul li {
+  position: relative;
+}
+.single-service-section .widget ul li::before {
+  content: "\2713";
+  font-family: Fontawesome;
+  left: -21px;
+  position: absolute;
+  top: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0cf ;
+}
+
+.single-service-section .widget.recent_posts a {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.single-service-section .widget.recent_posts span {
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.single-service-section .title-img .img-container{
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Single Service Details Area */
+.single-service-section .detail-content .section-title{
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+.single-service-section .detail-content{
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+.single-service-section .news-details-area{
+      box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.14);
+}
+
+.single-service-section .detail-content .section-title h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.single-service-section .apply-btn{
+	background: #333;
+	color: #fff;
+	font-weight:600;
+	border: 1px solid #333;
+	border-radius: 30px 0 30px 30px;
+	transition: 0.4s ease-in-out;
+}
+.single-service-section .apply-btn:hover{
+	transform: scale(1.07);
+}
+.single-service-section .detail-content .section-title span {
+ font-weight: 500;
+}
+.single-service-section .detail-content .section-sub-title h4 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.single-service-section .detail-content ul{
+  margin: 16px 0;
+}
+
+.single-service-section .detail-content .list-with-icon i{
+ margin-right: 5px;
+ color: #0091ad !important;
+}
+.single-service-section .detail-content .list-with-icon li{
+margin-bottom: 10px;
+}
+
+.single-service-section .detail-content .list-with-icon li span{
+font-family: 'Quicksand', sans-serif;
+    color: #333;
+    font-weight: 500;
+}
+.single-service-section .detail-content .resource li{
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+.single-service-section .detail-content .pricing li{
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+.single-service-section .detail-content .payment li{
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+.single-service-section .detail-content .faq-title{
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.single-service-section .detail-content .faq-title h4{
+  font-size: 24px;
+}
+.single-service-section .detail-content .bs-example button{
+  text-decoration: none;
+  color: #333;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.single-service-section .detail-content .bs-example button:focus{
+  box-shadow: none;
+}
+
+.single-service-section .accordion>.card>.card-header {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.single-service-section .accordion>.card {
+    overflow: hidden;
+    border: none;
+}
+
+.single-service-section .accordion .card-body {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 2.26rem;
+}
+.single-service-section .accordion .card-body p {
+  font-family: 'Quicksand', sans-serif;
+  border-left: 4px solid rgba(37, 147, 213, 0.25);
+  padding-left: 6px;
+}
+.single-service-section .accordion .fas{
+  margin-right: 5px;
+  color: #0cf !important;
+}
+
+.single-service-section  .how-to-order__title{
+  font-family: 'Quicksand', sans-serif;
+  font-weight:700;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.single-service-section  .how-to-order-timeline{
+    list-style: none;
+    position: relative;
+    padding: 0;
+    counter-reset: timeline;
+    padding-left: 15px;
+}
+.single-service-section .how-to-order-timeline:before {
+    content: "";
+    height: 67%;
+    width: 1px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    background-color: #dfe4e6;
+}
+.single-service-section  .how-to-order-timeline__item{
+    padding: 0 30px;
+    position: relative;
+    counter-increment: timeline;
+}
+.single-service-section  .how-to-order-timeline__item:before {
+    content: counter(timeline);
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    background-image: linear-gradient(135deg,#21C87A 1%,#0cf  52%, #0cf);
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.single-service-section .large-paragraph--semibold-weight{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.single-service-section .how-to-order-timeline__item p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #383a3c;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Single Service Section CSS Ended Here */
+
+/*-----------------------------------------------------------------
+               Service  Details Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------
+                Product List Page CSS Start From Here
+------------------------------------------------------------------*/
+
+/* Product List Section CSS Start From Here */
+.product-list-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #fff;
+	padding: 30px 0;
+}
+.product-list-section .subheading {
+	font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.product-list-section .subheading:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 40px;
+    height: 2px;
+    background: #0cf;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+}
+.product-list-section .section-heading h3{
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+	color: #333;
+	font-size: 36px;
+	letter-spacing: -1.3px;
+	text-transform: capitalize;
+}
+.product-list-section .service-btn{
+	text-align: right;
+}
+
+.product-list-section .btn-main {
+    background: #0cf;
+    color: #fff;
+    border-color: #0cf;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size:13px;
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid transparent;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+}
+.product-list-section .btn-main:hover{
+   background: transparent;
+   color: #333;
+   border: 1px solid #333;
+}
+.product-list-section .trending-service-block {
+    border: 1px solid #e2f4ff;
+    background: #fff;
+    transition: .4s;
+    margin-bottom: 25px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.product-list-section .trending-service-block.trending-style:hover {
+	cursor: pointer;
+	box-shadow: 0 14px 59px rgb(0 0 0 / 12%);
+	background: #fff;
+}
+.product-list-section .trending-service-block.trending-style:hover .trending-img img{
+	transform: scale(1.06);
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.5s ease-in-out;
+}
+.product-list-section .trending-service-block.trending-style{
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: 0.5s ease-in-out;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+.product-list-section .trending-img {
+    position: relative;
+    margin-bottom: 10px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: 0.5s ease-in-out;
+}
+.product-list-section .trending-img img {
+    border-radius: 5px;
+    border-radius: 0px;
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.product-list-section .trending-style .trending-img .trending-cat {
+    position: absolute;
+    content: "";
+    left: 185px;
+    bottom: -25px;
+    background:#FF284F;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+}
+.product-list-section .trending-service-block .trending-content {
+    padding: 20px;
+}
+.product-list-section .trending-service-block .trending-footer {
+    border-top: 1px solid #e2f4ff;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+.product-list-section .trending-meta {
+    margin: 5px 0px;
+}
+.product-list-section .trending-meta span {
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 12px;
+    color: #222;
+    font-weight: 600;
+}
+.product-list-section .trending-meta span i {
+    margin-right: 7px;
+    color: #0cf;
+}
+.product-list-section .trending-style .rating, .trending-style .trending-price {
+    margin-bottom: 0px;
+}
+.product-list-section .trending-price {
+    color: #FF1949;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+.product-list-section .trending-price .del {
+    text-decoration: line-through;
+    color: #727695;
+    font-weight: 400;
+    font-size: 14px;
+}
+.product-list-section .img-container{
+	height: 200px;
+    background-size: cover;
+    background-color: #ddd;
+    background-position: center center;
+    position: relative;
+    display: block;
+}
+.product-list-section .trending-content h4 a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+	line-height: 0;
+}
+.product-list-section .trending-content h4{
+	line-height: 0.9;
+	text-align: center;
+}
+.product-list-section .view-btn a{
+	padding: 5px 14px;
+	border: 1px solid #333;
+	color: #fff;
+	font-weight: 500;
+	font-size: 10px;
+	border-radius: 50px;
+	background-color: #333;
+	transition: 0.3s ease-in-all;
+}
+.product-list-section .view-btn a:focus{
+	box-shadow: none;
+}
+.product-list-section .view-btn a:hover{
+	background: transparent;
+	border: 1px solid #333;
+	color: #333;
+	transition: 0.3s ease-in-all;
+}
+.product-list-section .view-btn a i{
+	font-size: 12px;
+}
+/* Product List Section CSS Ended Here */
+
+/* Pagination */
+
+.product-list-section  .pagination-box li {
+    display: inline-block;
+}
+.product-list-section .pagination-box li a {
+    /* border: 1px solid #ebebeb;
+    border-radius: 30px; */
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    margin: 0 3px;
+    display: inline-block;
+    color: #333;
+    position: relative;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+}
+.product-list-section .pagination li:first-child a, .pagination li:first-child span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination-box > .active > a, .pagination-box > .active > a:focus, .pagination-box > .active > a:hover, .pagination-box > .active > span, .pagination-box > .active > span:focus, .pagination-box > .active > span:hover {
+    background-color: #0cf;
+    border-color: #0cf;
+}
+.pagination-box .active a {
+    color: #fff !important;
+}
+.pagination li:last-child a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pagination-box li a:hover {
+    background-color: #0cf;
+    border-color: #0cf;
+}
+.pagination-box li a:hover {
+    color: #fff;
+}
+
+/*-----------------------------------------------------------------
+                Product List Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------
+                Product Details Page CSS Start From Here
+------------------------------------------------------------------*/
+
+/* Product Details Section CSS Start From Here */
+.product-details-secction{
+  width: 100%;
+  padding: 60px 0;
+  background-color: #fff;
+}
+ .product-details-secction .product-title h3{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+ }
+ .product-details-secction .product-price h5{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+
+ }
+ .product-details-secction .product-description p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+ }
+ .product-details-secction .table-responsive strong{
+   letter-spacing: 1px;
+ }
+ .product-details-secction .table-responsive strong, td{
+   font-family: 'Lato', sans-serif;
+   font-size: 15px;
+ }
+ .product-details-secction .quantity, .size{
+  font-family: 'Lato', sans-serif;
+ }
+ .product-details-secction .size p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+ }
+ .product-details-secction .quantity label{
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+ }
+ .product-details-secction .rating ul li i{
+ color: #0cf !important;
+ }
+
+ .product-details-secction .breadcrumb{
+ background-color: #F7F8FA;
+}
+.product-details-secction .breadcrumb li a{
+	/* font-family: 'Lato', sans-serif; */
+	color: #0cf;
+	font-weight: 500;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.product-details-secction .rating ul li:not(:last-child){
+  float: left;
+  margin-right: 3px;
+}
+
+.product-details-secction .quantity{
+  display: flex;
+  flex-direction: column;
+}
+.product-details-secction .quantity input{
+ width: 50%;
+ border: none;
+ padding: 2px 10px;
+ outline: none;
+ border: 1px solid #ddd;
+}
+.product-details-secction .quantity button{
+ width: 32px;
+ border: none;
+ background:rgb(145, 155,149);
+ color: #fff;
+ outline: none;
+}
+
+.product-details-secction .size form .margin{
+ margin-right: 10px;
+}
+.product-details-secction .product-details-button{
+  margin-top: 25px;
+}
+.product-details-secction .product-details-button .buy-btn{
+  background-color: #0cf ;
+  color: #fff;
+  font-weight: 600;
+  margin-right: 15px;
+}
+.product-details-secction .product-details-button .buy-btn:focus{
+ box-shadow: none;
+}
+.product-details-secction .product-details-button .cart-btn{
+  font-family: 'Lato', sans-serif;
+  background-color: #757575;
+  color: #fff;
+  
+}
+.product-details-secction .product-details-button .cart-btn:focus{
+  box-shadow: none;
+}
+.product-details-secction .small-img-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.product-details-secction .small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+
+.product-details-secction .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+
+/* Specification Table Details */
+
+.product-details-secction .specification-table{
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+ .product-details-secction .specification-table  tr td:first-child {
+    width: 15%;
+    background-color: #f1f2f4;
+}
+
+ .product-details-secction .specification-table  tr td {
+    word-spacing: 4px;
+}
+ .product-details-secction .nav-link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top:0px;
+  width: 100%;
+  height: 2px;
+  background-color: #0cf;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+}
+.product-details-secction .nav-link:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.product-details-secction .nav-link{
+  color:#333 !important; 
+}
+.product-details-secction .nav-link:hover{
+  color:#333 !important; 
+}
+.product-details-secction .specification-title{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.product-details-secction .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  border-top: 2px solid #0cf;
+}
+
+/* Product Details Section CSS Ended Here */
+
+/*-----------------------------------------------------------------
+                Product Details Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------
+                Checkout Page CSS Start From Here
+------------------------------------------------------------------*/
+
+/* Checkout Section CSS Start From Here */
+.checkout-section{
+  width: 100%;
+  padding: 45px 0;
+  background-color: #fff;
+}
+.checkout-section .checkout-left{/* 
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.14); */
+  border-radius: 5px;
+  padding: 22px !important;
+  border: 1px solid #ddd;
+}
+.checkout-section .checkout-right h4{
+  font-family: 'Lato', sans-serif;
+  background: #0cf;
+  padding: 10px;
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+.checkout-section .checkout-right .img-details h6{
+	font-weight: 700;
+}
+.checkout-section .checkout-right .img-details .desc{
+	font-size: 13px;
+}
+.checkout-section .checkout-right h4 .text-muted{
+  color: #fff !important;
+  font-size: 18px;
+}
+.checkout-section .checkout-right .list-group{
+  border-radius: 0 !important;
+}
+.checkout-section .btn-bg{
+  background: #0cf;
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.checkout-section .btn-bg:focus{
+  box-shadow: none;
+}
+.checkout-section .badge-secondary{
+  background: #fff !important;
+  color: #333 !important;
+}
+
+.custom-select {
+	display: inline-block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem 1.75rem .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	background: #fff url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right .75rem center/8px 10px;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Checkout Section CSS Ended Here */
+/*-----------------------------------------------------------------
+                Checkout Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------
+                Contact Page CSS Start From Here
+------------------------------------------------------------------*/
+
+/* Contact Section CSS Start From Here */
+.contact-section{
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  padding: 40px 0;
+}
+.contact-section .details-title h3{
+     font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    color: #333 !important;
+    margin: 0;
+    padding-bottom: 10px;
+    /* position: relative; */
+    text-transform: capitalize;
+    /* font-size: 16px; */
+    letter-spacing: 1px
+}
+.contact-section .details-title h3 .bar {
+    height: 2px;
+    width: 35px;
+    background-color:#0cf;
+}
+
+.contact-section .icon-pos{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+  }
+
+.contact-section .icon-pos .icon{
+  color:#0cf;
+/*   margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 7px; */
+}
+.contact-section .icon-pos .icon i{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #0cf;
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+  .contact-section .address, .phone, .email {
+    padding: 25px 17px;
+    border-radius: 0px;
+  }
+  .contact-section .hov-effect:hover{
+    cursor: pointer;
+    transform: translateX(5px);
+    box-shadow: 0 19px 32px rgba(12,12,12,.16);
+    box-shadow: rgba(75, 174, 72, 0.2) -2px 0px;
+    transition: 0.3s ease-in-out;
+  }
+  .contact-section .hov-effect:hover .icon-pos .icon{
+  color: #0cf !important;
+  }
+  .contact-section .address h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  .contact-section .address p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #333;
+    
+  }
+  .contact-section .phone h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #333;
+    
+  }
+  .contact-section .phone p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #333;
+    
+  }
+  .contact-section .email h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #333;
+    
+  }
+ .contact-section .email p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #333;
+    
+  }
+
+
+
+  /* Right area */
+
+  .contact-section .contact-form-area {
+ /*  box-shadow: rgb(255 255 255 / 12%) 0px 1px 5px, rgb(255 255 255 / 24%) 0px 1px 2px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+ }
+ .contact-section .contact-form-area .contact-info {
+    margin-bottom: 30px;
+}
+ .contact-section .contact-form-area .contact-info h2 {
+    font-size: 30px;
+    margin: 0 0 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+ .contact-section .contact-form-area .form-group {
+    margin-bottom: 30px;
+}
+ .contact-section .contact-form-area .form-group input {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 8px 15px;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: #333;
+}
+ .contact-section .contact-form-area .form-group.mb-18 {
+    margin-bottom: 18px;
+}
+ .contact-section .contact-form-area .form-group textarea {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+    color: #333;
+}
+ .contact-section .contact-form-area input.sbmt-btn {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0cf;
+    border: medium none transparent;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+ .contact-section .contact-form-area input.sbmt-btn:hover {
+   background-color: transparent;
+   border: 1px solid #333;
+   color: #333;
+   transition: 0.3s ease-in-out;
+}
+ .contact-section input[type="submit"] {
+    background: #666 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 9px 19px;
+    text-transform: capitalize;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+}
+/* Contact Section CSS Ended Here */
+
+/*-----------------------------------------------------------------
+               Registration Page CSS Start From Here
+------------------------------------------------------------------*/
+
+.reg-form-width{
+    padding: 0px 20px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 2px 1px #ddd;
+    border-radius: 10px !important;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.reg-form-header {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin: 0 -20px;
+    margin-bottom: 30px !important;
+    background-color: #0cf;
+    background-image: url('../img/reg-bg.svg');
+    padding: 15px;
+    box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 24%);
+    color: white !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.form-control {
+    border: 1px solid #ced4da5c !important;
+   /* padding-left: 20px !important;*/
+    /*box-shadow: 1px 1px 3px 0px #f0ecec82;*/
+}
+.textarea-2 {
+    min-height: 150px !important;
+    max-height: 150px !important;
+}
+.btn-default {
+    /*width: 100%;*/
+    border-radius: 2px !important;
+    box-shadow: 1px 4px 7px 0px rgb(99 97 97 / 24%);
+    color: white !important;
+    background-color: #0cf !important;
+    border-color: transparent !important;
+}
+.btn-default:focus {
+	box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #ced4da !important;
+    box-shadow: none !important;
+}
+.form-control::placeholder {
+    color: #777;
+}
+.form-select {
+    height: 46px !important;
+    color: #495057!important;
+    padding-left: 20px !important;
+    box-shadow: 1px 1px 3px 0px #f0ecec82;
+}
+.form-select:focus {
+    border-color: #ced4da !important;
+    box-shadow: none !important;
+}
+
+
+/*-----------------------------------------------------------------
+               Registration Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------
+                University List Page CSS Start From Here
+------------------------------------------------------------------*/
+/* Banner Section CSS Start From Here */
+/* Banner Section CSS Ended Here */
+
+/*-----------------------------------------------------------------
+                University List Page CSS Ended Here
+------------------------------------------------------------------*/
+
+
+
+
+/* Footer Section CSS Start From Here */
+.footer-section{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #151414;
+	padding: 30px 0;
+	/* margin-top: 900px; */
+}
+
+.footer-section h4{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #999;
+}
+.footer-section .address p{
+	color: #999;
+	font-weight: 400;
+	font-size: 15px;
+}
+.footer-section .about-description{
+	color: #999;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.footer-section  .subscribe-form p{
+	color: #999 !important;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.footer-section .footer-social-icon a {
+  color: #fff;
+  font-size: 15px;
+  margin-right: 15px;
+}
+.footer-section .footer-social-icon i {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+.footer-section .footer-social-icon i:hover{
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+.footer-section .facebook-bg{
+  background: #3B5998;
+}
+.footer-section .twitter-bg{
+  background: #55ACEE;
+}
+.footer-section .google-bg{
+  background: #DD4B39;
+}
+.footer-section .subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.footer-section .subscribe-form input {
+  width: 100%;
+  padding: 12px 25px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.footer-section .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #0cf;
+    padding: 12px 20px;
+    border: 1px solid #0cf;
+    top: 0;
+}
+.footer-section .subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+/* Footer Section CSS Ended Here */
+
+
+/* Reach To Top Section CSS Start From Here */
+.reach-to-top{
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	height: 50px;
+	width: 40px;
+	z-index: 9999; 
+	background-color: #333;
+	opacity: 0;
+	pointer-events: none;
+}
+.reach-to-top:focus{
+	box-shadow: none;
+}
+
+.active{
+	opacity: 1;
+	pointer-events: auto;
+	transition: 0.3s ease-in-out;
+}
+.bounceUpDown {
+	animation: bounceUpDown 1s infinite linear alternate;
+}
+@keyframes bounceUpDown {
+	0% {
+		transform: translateY(-20px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+/* Reach To Top Section CSS Ended Here */
+
+
+
+/*-----------------------------------------------------------------
+                Index Page CSS Ended Here
+------------------------------------------------------------------
